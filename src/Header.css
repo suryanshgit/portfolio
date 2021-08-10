@@ -1,0 +1,113 @@
+
+.brand{
+    border:2px solid white;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    width:10%;
+
+}
+.navlink{
+    color:white;
+    text-decoration:none;
+}
+.navlink:hover{
+    color:tomato;
+}
+
+.selected_class{
+    color:orange;
+    border-bottom:2px solid yellow;
+}
+
+.mainMenu ul{
+    list-style-type:none;
+    position:absolute;
+    visibility:hidden;
+}
+.mainMenu ul {
+    z-index:1;
+}
+
+.mainMenu ul li{
+    margin-left:-32px;
+    display:flex;
+    justify-content:center;
+    background:#0984e3;
+}
+.mainMenu:hover>ul{
+    margin-top:0px;
+}
+.mainMenu:hover>ul li{
+    visibility: visible;
+}
+
+.desktop-view{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    border:2px solid red;
+    width:100%;
+}
+.mobile-view{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* align-items:space-around; */
+    /* visibility:hidden; */
+    list-style-type:none;
+    font-size:20px;
+    border:2px solid white;
+    position:absolute;
+    margin-top:28px;
+    width:100%;
+    background:skyblue;
+    
+   
+}
+
+.menu{
+    display:flex;
+    flex-direction:row;
+    border:2px solid white;
+    width:80%;
+}
+
+
+
+/* ----------------------Making responsive header----------------------------- */
+/* ------------------------Desktop view------------------ */
+@media (min-width:1024px){
+   
+    .hamburger{
+        display:none;
+    }
+    
+}
+/* ------------------------------Tablet view----------------------- */
+@media (min-width:787px) and (max-width:1024px)
+{
+    
+    .hamburger{
+        display:none;
+    }
+}
+/* ------------------------Mobile view-------------- */
+@media (max-width: 786px) and (min-width:0){
+    .desktop-view{
+        display:none;
+    }
+    
+    .hamburger{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        border:2px solid red;
+      
+    }
+    
+   
+  
+}

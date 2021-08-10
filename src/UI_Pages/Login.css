@@ -1,0 +1,31 @@
+.login-div{
+    min-height:82vh;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.loginPage{
+   
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding:30px;
+   
+
+}
+/* ---------------------Tablet view--------------------- */
+@media (min-width:787px) and (max-width:992px)
+{
+    .login-div{
+        min-height:83vh;
+    }
+}
+/* ------------Mobile view--------------- */
+@media (max-width:786px){
+   .login-div{
+       min-height:87vh;
+   }
+}

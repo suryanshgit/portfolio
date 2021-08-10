@@ -1,0 +1,134 @@
+.about-height-div{
+    min-height:83vh;
+}
+.about-div{
+    height:100%;
+    width:100%;
+    /* // border:'2px solid blue', */
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:2px solid green; */
+}
+
+.main{
+     width:80%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* border:2px solid red; */
+}
+.heading{
+    color: black;
+    font-family: 'MonteCarlo';
+    font-size: 50px;
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+     /* border:'2px solid red' */
+}
+
+.description{
+    /* font-size:15px; */
+     /* border:'2px solid red', */
+     /* font-size:15px; */
+    /* padding:10px; */
+    margin-top:30px;
+    width:50%;
+    float:right;
+    /* border:2px solid green; */
+}
+
+.profileImage{
+    display: inline-flex;
+    width:50%;
+    justify-content: center;
+    margin-top:30px;
+    /* border:2px solid red; */
+   
+}
+img{
+    /* border:2px solid orange; */
+    width:50%;
+    height:50%;
+}
+
+
+@media (min-width:769px) and (max-width:1200px){
+.main{
+    display:block;
+    min-height:80%;
+}
+.heading{
+    color: black;
+    font-family: 'MonteCarlo';
+    font-size: 50px;
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+     /* border:'2px solid red' */
+}
+
+.description{
+    font-size:15px;
+     /* border:'2px solid red', */
+     font-size:15px;
+    padding:10px;
+    width:50%;
+    float:right;
+}
+
+.profileImage{
+    display: inline-flex;
+    width:50%;
+    justify-content: center;
+    /* border:2px solid red; */
+   
+}
+img{
+    /* border:2px solid orange; */
+    width:50%;
+    height:50%;
+}
+}
+/* ----------------------Tablet view--------------------- */
+@media (min-width:787px) and (max-width:992px){
+
+
+}
+
+/* --------------------Mobile view---------------------- */
+@media (max-width: 768px){
+    .heading{
+        font-size:30px;
+    }
+
+    .profileImage{
+        width:100%;
+        padding:0;
+        position:relative;
+        /* border:2px solid red; */
+        background-size:cover;
+    }
+    img{
+        /* position:absolute; */
+        width:50%;
+        height:80%;
+        /* border:2px solid pink; */
+    }
+    .description{
+        padding: 0 15px;
+        float:none;
+        width:100%;
+        font-size:10%;
+    }
+    .main{
+        display:block;
+        min-height:80%;
+    }
+    .about-height-div{
+        min-height:50vh;
+    }
+
+}

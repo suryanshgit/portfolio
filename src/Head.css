@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+li{
+    margin:0;
+    padding:0;
+}
+
+.main-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+    /* border:2px solid violet; */
+    /* height:20%;  */
+    /* width:100%;  */
+    /* display:flex;
+    justify-content:flex-end; */
+    background:#0984e3;
+    box-sizing:border-box;
+    
+}
+.navlink{
+    text-decoration:none;
+    color:white;
+    /* color:blue; */
+    margin:0;
+    padding:0;
+}
+.navlink:hover{
+    color:red;
+}
+
+.brand-name{
+    /* border:2px solid indigo; */
+    width:10%;
+    /* height:10%; */
+    position:absolute;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    margin-left:50px;
+    padding:0;
+}
+.menu-container{
+    /* border: 2px solid blue; */
+    width:40%;
+    height:10%;
+    margin:0;
+    padding:0;  
+    margin-right:10px;
+    /* float:right; */
+   
+}
+.menu-container ul{
+    /* border:2px solid yellow; */
+    display:flex;
+    justify-content:space-between;
+    /* align-items:center; */
+    box-sizing:border-box;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.menu-container ul li{
+    /* border:2px solid pink; */
+    height:10%;
+
+}
+.desktop-view{
+   
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    position:relative;
+    
+}
+
+.mainMenu>ul{
+    /* visibility:visible; */
+    display:none;
+}
+
+.mainMenu:hover>ul{
+    /* visibility:visible; */
+    display:flex;
+    margin-top:0px;
+    /* background:blue; */
+    padding:0 10px;
+   
+   
+}
+
+
+.subMenu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:absolute;
+    background:#4834d4;
+    width:20vw;
+    font-stretch:ultra-expanded;
+    margin-left:-5%; 
+    z-index:5;
+}
+.subMenu li{ 
+    height:50%;
+    margin:5% 0;
+}
+.hamburger{
+    display:none;
+}
+/*------------------------------Desktop view----------------------*/
+@media (min-width:769px) and (max-width:1200px)
+{
+   .menu-container{
+       display:block;
+   }
+}
+
+/* -----------------------Mobile view----------------------- */
+@media (max-width:768px){
+    
+    .brand-name{
+        font-size:20px;
+        margin-left:50px;
+        /* border:2px solid red; */
+        width:20%;
+        height:20px;
+      
+    }
+    .desktop-view{
+        
+        /* visibility:hidden; */
+        display:none;
+    }
+    .mobile-view{
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:10px;
+        background:white;
+        width:100%;
+        padding-left:-50%;
+        font-size:20px;
+        background:#0984e3;
+    }
+
+    .menu-container{
+        display:none;
+        width:100%;
+        /* border:2px solid red; */
+        /* position:absolute; */
+        z-index:5;
+        
+    }
+       
+    .subMenu{
+        margin-left:15%; 
+        
+        background:#4834d4;
+        width:30%;
+        display:flex;
+        justify-content:flex-start;
+        /* border:2px solid red; */
+        text-align:center;
+        /* position:absolute;
+        z-index:50; */
+    }
+
+    .hamburger{
+        display:flex;
+        align-items:center;
+        width:70px;
+        /* border:2px solid red; */
+        /* margin-right:50px;
+        margin-top:15px; */
+        /* margin-bottom:5%; */
+       
+        /* float:right; */
+    }
+    
+   
+}
+

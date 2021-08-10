@@ -1,0 +1,24 @@
+
+.register-div{
+    min-height:81.95vh;
+    display:flex;
+    align-items:center;
+}
+/* ---------------------Tablet view---------------- */
+@media (min-width:787px) and (max-width:992px){
+    .register-div{
+        min-height:83vh;
+        display:flex;
+        align-items:center;
+    }
+}
+
+/* ------------------------Mobile view--------------------- */
+@media (max-width:786px)
+{
+    .register-div{
+        min-height:87vh;
+        display:flex;
+        align-items:center;
+    }
+}

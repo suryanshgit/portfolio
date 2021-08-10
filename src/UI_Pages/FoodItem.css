@@ -1,0 +1,47 @@
+#main{
+    margin:5px;
+    width:40%;
+    margin-left:80px;
+    margin-top:20px;
+    margin-bottom:20px;
+    transition:transform, 0.1s;
+}
+
+#main:hover{
+    transform:scale(1.05);
+
+}
+
+.dots{
+    display:inline;
+
+}
+.more{
+    display:none;
+}
+
+.button{
+    /* border:2px solid red; */
+    border:none;
+    background:none;
+    display:flex;
+    width:100px;
+    color:blue;
+    text-decoration:underline;
+    margin-top:-15px
+    
+}
+.desc>p{
+    /* border:2px solid blue; */
+    
+}
+.desc{
+    display:flex;
+    flex-direction:column;
+}
+/* -----------------------Mobile view------------------------- */
+@media (max-width:786px)
+{
+
+    
+}
