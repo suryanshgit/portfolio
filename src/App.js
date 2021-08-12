@@ -46,13 +46,13 @@ const RouteMenu=(login)=>{
   return(
     <>
   <Switch>
-    <Route exact path="/" component={Home}/>
-    <Route exact path="/home" component={Home}/>
-    <Route exact path="/about" component={About}/>
-    <Route exact path="/content" component={Content}/>
-    <Route exact path="/content/:state" component={Content}/>
-    <Route exact path="/logout" component={Logout}/>
-    <Route exact path="/food" component={FoodItem}/>
+    <Route exact path="/portfolio/" component={Home}/>
+    <Route exact path="/portfolio/home" component={Home}/>
+    <Route exact path="/portfolio/about" component={About}/>
+    <Route exact path="/portfolio/content" component={Content}/>
+    <Route exact path="/portfolio/content/:state" component={Content}/>
+    <Route exact path="/portfolio/logout" component={Logout}/>
+    <Route exact path="/portfolio/food" component={FoodItem}/>
     <Route component={Error}/>
   </Switch>
   </>
@@ -62,10 +62,10 @@ const RouteMenu=(login)=>{
     return(
       <>
   <Switch>
-    <Route exact path="/home" component={Home}/>
-    <Route exact path="/login" component={Login}/>
-    <Route exact path='/register' component={Register}/>
-    <Route exact path='/about' component={About}/>
+    <Route exact path="/portfolio/home" component={Home}/>
+    <Route exact path="/portfolio/login" component={Login}/>
+    <Route exact path='/portfolio/register' component={Register}/>
+    <Route exact path='/portfolio/about' component={About}/>
     <Route component={Error}/>
   </Switch>
   </>
