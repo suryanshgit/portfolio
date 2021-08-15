@@ -28,13 +28,13 @@ const ImageSlider=()=>{
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="images/misal_pav.jpg" className="d-block w-100" height="500px" alt="misal pav" style={{opacity:'0.6'}} />
+      <img src="images/misal_pav.jpg"  className="d-block w-100 content-slider-image" height="200px" alt="misal pav" style={{opacity:'0.6'}} />
     </div>
     <div className="carousel-item">
-      <img src="images/pav_bhaji.jpeg" className="d-block w-100" height="500px" alt="pav bhaji" style={{opacity:'0.6'}} />
+      <img src="images/pav_bhaji.jpeg" className="d-block w-100 content-slider-image" height="200px" alt="pav bhaji" style={{opacity:'0.6'}} />
     </div>
     <div className="carousel-item">
-      <img src="images/vada_pav.jpg" className="d-block w-100" height="500px" alt="vada pav" style={{opacity:'0.6'}} />
+      <img src="images/vada_pav.jpg" className="d-block w-100 content-slider-image" height="200px" alt="vada pav" style={{opacity:'0.6'}} />
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

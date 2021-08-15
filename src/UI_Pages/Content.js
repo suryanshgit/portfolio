@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import FoodItem from './FoodItem'
 import Display from './Display'
 import ImageSlider from './ImageSlider'
+import './Content.css'
 // import img from '../Backend/Food_pics/Maharashtrian_food/vada_pav.jpg'
 
 const obj = {
@@ -63,12 +64,14 @@ const Content = () => {
     else {
         return (
             <>
-                <div style={obj}>
+                <div className="content-main-div">
+                <div >
                     <ImageSlider />
                 </div>
                 <div>
                     <h5 className="text-center">Welcome to the Foodpedia</h5>
                     <p>Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.Velit cillum laborum do tempor. Cupidatat sint quis nisi ut. Anim ad ad tempor Lorem id ea. Ut eiusmod dolore sit ut voluptate exercitation elit est enim laborum. Ut quis velit et aliqua esse ullamco incididunt mollit sit.</p>
+                </div>
                 </div>
             </>
         )

@@ -1,0 +1,37 @@
+
+.content-slider-image{
+    overflow:hidden;
+    /* height:50%; */
+
+}
+
+.content-main-div{
+    min-height:80vh;
+}
+
+/*-----------------------Desktop view---------------------------*/
+@media (max-width:1400px)
+{
+    .content-main-div{
+        min-height:88vh;
+    }
+}
+
+/* ------------------------Tablet view---------------------- */
+@media (min-width:769px) and (max-height:992px){
+    .content-main-div{
+        min-height:80vh;
+    }
+}
+
+
+
+
+
+
+/* ------------------------Mobile view----------------- */
+@media (max-width:768px){
+    .content-main-div{
+        min-height:80vh;
+    }
+}

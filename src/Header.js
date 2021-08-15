@@ -76,7 +76,7 @@ if (login.state) {
                             <NavLink className="navlink" activeClassName="selected_class" to="/portfolio/home" >Home</NavLink>
                         </li>
                         <li className="mainMenu">
-                            <NavLink className="navlink mainMenu-content " activeClassName="selected_class" to="/portfolio/content" >Content </NavLink>
+                            <NavLink className="navlink mainMenu-content " activeClassName="selected_class" to="/portfolio/content" >Famous Food  </NavLink>
                             <ul className="subMenu">
                                 <li><NavLink className="navlink " to="/portfolio/content/Maharashtra">Maharashtra</NavLink></li>
                                 <li><NavLink className="navlink " to="/portfolio/content/UP">Uttar Pradesh</NavLink></li>

@@ -1,8 +1,9 @@
 
 import FoodItem from './FoodItem'
+import './Display.css'
 
 const obj = {
-    minHeight: '80vh',
+    minHeight: '81vh',
 }
 const festival = {
     color: 'tomato',
@@ -14,6 +15,7 @@ const festival = {
     // background: 'lightblue',
 
     // border:'2px solid black',
+
 
 }
 const heading={
@@ -39,7 +41,7 @@ const Display=({value})=>{
             <div style={obj}>
                 <h5 style={heading}>Famous food of {value.state} state</h5>
                
-                <div style={festival} >
+                <div style={festival} className="main-display-container">
                   
 
                     {value.images.map((image, index, array) => {
