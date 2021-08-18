@@ -4,7 +4,7 @@ import './FoodItem.css';
 
 
 
-const handleText = (id) => {
+const handleText = (id) => { 
     console.log("value of id is");
     console.log(id);
     const dots = document.querySelector(".dots"+id);
@@ -27,9 +27,9 @@ const handleText = (id) => {
         hiddenItem.style.display = 'inline';
         btn.innerText="read less";
         mainDiv.style.width='80%';
-        mainDiv.style.height='400px'
-        itemContainer.style.height='400px';
-        itemDescription.style.height='200px';
+        mainDiv.style.height='600px'
+        itemContainer.style.height='500px';
+        itemDescription.style.height='300px';
         itemImage.style.width='80%';
         itemImage.style.marginLeft='10%';
 
@@ -46,6 +46,7 @@ const handleText = (id) => {
         mainDiv.style.width='40%';
         mainDiv.style.height='360px';
         itemContainer.style.height='360px';
+        itemDescription.style.height='230px';
         itemImage.style.width='100%';
         itemImage.style.marginLeft='0';
         // mainDiv.style.height='170px';

@@ -138,12 +138,17 @@ button{
 @media (max-width:786px)
 {
     .item-main-div,.item-container{
-        height:360px !important;
+        height:410px !important;
+        /* height:360px; */
         display:block;
     }
     .item-main-div{
         margin-top:20px;
         
+    }
+
+    .item-description {
+        height: 235px !important;
     }
    
     .item-image{
