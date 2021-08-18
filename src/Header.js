@@ -10,7 +10,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 const obj = {
-
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
