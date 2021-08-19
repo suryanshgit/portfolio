@@ -62,6 +62,7 @@ const RouteMenu=(login)=>{
     return(
       <>
   <Switch>
+    <Route exact path="/portfolio/" component={Home}/>
     <Route exact path="/portfolio/home" component={Home}/>
     <Route exact path="/portfolio/login" component={Login}/>
     <Route exact path='/portfolio/register' component={Register}/>

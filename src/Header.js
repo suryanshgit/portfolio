@@ -112,7 +112,7 @@ else {
         <>
            
             <div className=" main-div" >
-                <div className=" brand-name"> <Link className="navlink" to="/">Foodpedia</Link></div>
+                <div className=" brand-name"> <Link className="navlink" to="/portfolio/">Foodpedia</Link></div>
                 <div className=" menu-container " >
                     <ul className={flag ? "mobile-view" : "desktop-view"}>
                         <li>
