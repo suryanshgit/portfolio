@@ -80,6 +80,8 @@ if (login.state) {
                                 <li><NavLink className="navlink " to="/portfolio/content/Maharashtra">Maharashtra</NavLink></li>
                                 <li><NavLink className="navlink " to="/portfolio/content/UP">Uttar Pradesh</NavLink></li>
                                 <li><NavLink className="navlink " to="/portfolio/content/Bihar">Bihar</NavLink></li>
+                                <li><NavLink className="navlink " to="/portfolio/content/Rajasthan">Rajasthan</NavLink></li>
+                                <li><NavLink className="navlink " to="/portfolio/content/Gujarat">Gujarat</NavLink></li>
                             </ul>
 
                         </li>

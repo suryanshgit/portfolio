@@ -15,7 +15,7 @@ import Logout from './UI_Pages/Logout'
 import FoodItem from './UI_Pages/FoodItem'
 import {createContext,useContext} from 'react'
 
-const initialState=true;
+const initialState=false;
 const reducer=(state,action)=>{
     console.log(state,action);
     return !state;

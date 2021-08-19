@@ -85,34 +85,6 @@ const handleText = (id) => {
     }
 }
 
-// const desktopView=window.matchMedia('(min-width:769px)')
-
-//     if(desktopView.matches)
-//     {
-//         // document.querySelector('.item-main-div').style.height='180px';
-//         // document.querySelector('.item-container').style.height='180px';
-//         // document.querySelector('.item-main-div').style.background='blue';
-//     }
-
-// window.addEventListener('resize',()=>{
-//     const handleResize=(id)=>{
-//     /* moving towards desktop size*/
-//     console.log("value of id is ");
-//     console.log(id);
-//     if(window.innerWidth>=769){
-//     document.querySelector('#item-main-div'+id).style.height='180px';
-//     document.querySelector('#item-container'+id).style.height='180px';
-//     document.querySelector('#item-image'+id).style.width='50%';
-//     document.querySelector('#item-image'+id).style.marginLeft='0';
-//     }
-//     else{
-//         document.querySelector('#item-image'+id).style.width='80%';
-//         document.querySelector('#item-image'+id).style.marginLeft='10%';
-//     }
-// }
-
-
-
 
 const FoodItem = ({image,id}) => {
    console.log("Value of image is ");
@@ -124,26 +96,10 @@ const FoodItem = ({image,id}) => {
 
     
 
-    return (
+    return ( 
        
      <>
-            {/* <div id={"main"} className={"main"+id} style={obj}>
-                <div className="row" style={row}> 
-                    <div className="col-sm-12 col-md-6 image" style={img}>
-                       
-                        <img id={'image'+id} src={image} width="100%" height="100%" />
-                    </div>
-
-                    <div className="col-sm-12 col-md-6  desc" >
-                         <p>Nulla ex commodo aute amet laboris minim Lorem officia et sunt mollit. Fugiat id reprehenderit quis cillum in incididunt occaecat aute nisi veniam aute.<span id={"dots"+id} className="dots">...</span> <span id={"more"+id} className="more">Est excepteur occaecat irure aute mollit anim irure eu consequat fugiat pariatur excepteur reprehenderit culpa. Sunt deserunt nulla occaecat esse magna exercitation laboris laborum.Nulla ex commodo aute amet laboris minim Lorem officia et sunt mollit. Fugiat id reprehenderit quis cillum in incididunt occaecat aute nisi veniam aute. Est excepteur occaecat irure aute mollit anim irure eu consequat fugiat pariatur excepteur reprehenderit culpa. Sunt deserunt nulla occaecat esse magna exercitation laboris laborum.Nulla ex commodo aute amet laboris minim Lorem officia et sunt mollit. Fugiat id reprehenderit quis cillum in incididunt occaecat aute nisi veniam aute. Est excepteur occaecat irure aute mollit anim irure eu consequat fugiat pariatur excepteur reprehenderit culpa. Sunt deserunt nulla occaecat esse magna exercitation laboris laborum.</span></p>
-                         <button id={"btn"+id} className="button" onClick={()=>handleText(id)} > read more</button>
-                        
-                        
-                     </div>
-                 </div>
-             </div>  */}
-
-             {/* creating a new foot Item */}
+            {/* creating a new foot Item */}
 
              <div className="item-main-div" id={"item-main-div"+id}>
                 <div className="item-container" id={"item-container"+id}>

@@ -56,6 +56,12 @@ const Content = () => {
             case 'Bihar':
                 return <Display value={data[2]} />
                 break;
+            case 'Rajasthan':
+                return <Display value={data[3]} />
+                break;
+            case 'Gujarat':
+                return <Display value={data[4]} />
+                break;
             default: <h1>Invalid Input</h1>
         }
 
