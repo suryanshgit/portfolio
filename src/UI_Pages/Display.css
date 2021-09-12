@@ -2,3 +2,24 @@
     /* border: 2px solid red; */
     margin-top:20px;
 }
+
+/* ------------------Desktop View-------------------- */
+@media (min-width:993px){
+.display-div{
+    min-height:81vh;
+}
+}
+
+/* ------------------Tablet View-------------------- */
+@media (min-width:769px) and (max-width:992px){
+.display-div{
+    min-height:81vh;
+}
+}
+
+/* ------------------Mobile View-------------------- */
+@media (max-width:768px){
+.display-div{
+    min-height:91vh;
+}
+}

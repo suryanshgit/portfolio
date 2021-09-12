@@ -121,6 +121,10 @@ li {
     display: none;
 }
 
+.cart-icon{
+    color:white; 
+}
+
 
 /*------------------------------Desktop view----------------------*/
 
@@ -128,6 +132,11 @@ li {
     .menu-container {
         display: block;
     }
+    .cart-icon{
+        color:white;
+        
+    }
+    
 }
 
 

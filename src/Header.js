@@ -2,14 +2,23 @@ import react, { useState, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 // import './Header.css'
 import './Head.css'
+import {useHistory} from 'react-router-dom'
 import { useContext } from 'react'
 import { LatestState } from './App'
+
+
+
 // import {GiHamburgerMenu} from "react-icons"
 import MenuIcon from '@material-ui/icons/Menu';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import {CartContext} from './CartCounter/CounterContextProvider';
+
+
 
 
 
 const obj = {
+    boxSizing:'border-box',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -24,16 +33,24 @@ const obj = {
 
 
 const Header = () => {
-
+    const history=useHistory();
     const [flag, setFlag] = useState(false);
     const login = useContext(LatestState);
-    console.log("value of state in Header")
-    console.log(login);
-    console.log(login.state)
+    const {counter}=useContext(CartContext);
+    
+    
+   
+    function cartHandle(){
+       
+        // setCart(JSON.parse(localStorage.getItem("cart")));
+        // alert(`You have successfully added item to the cart. There are total ${counter} number of items in the cart`);
+        localStorage.setItem("itemCount",counter);
+        history.push("/portfolio/home/cart")
 
-    // const useEffect = (() => {
+    };
+    
 
-    // })
+
 
 
     function handleSize() {
@@ -91,13 +108,18 @@ if (login.state) {
                         <li>
                             <NavLink className="navlink" activeClassName="selected_class" to="/portfolio/logout">Logout</NavLink>
                         </li>
+                        <li>
+                            <button onClick={cartHandle}><ShoppingCartIcon className="cart-icon" style={{fontSize:'30px'}} /><span id="cart"  style={{marginLeft:'-12px',fontWeight:'bold',position:'absolute',top:'-10px',fontSize:'20px'}}>{counter>0?counter:''}</span></button>
+                           
+                        </li>
+                      
 
 
                     </ul>
 
                 </div>
                 <div className=" hamburger ">
-                    <button className="bg-primary" onClick={handleMobileView} style={{ border: 'none', color: 'white' }}>
+                    <button className="bg-primary" onClick={handleMobileView} style={{ border: 'none', color: 'white' }}> 
                         <MenuIcon />
                     </button>
                 </div>

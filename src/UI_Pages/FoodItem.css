@@ -34,7 +34,7 @@
 
 .item-image {
     /* border:2px solid black; */
-    width: 50% !important;
+    width: 50% ;
     height: 175px;
     /* overflow:hidden; */
 }
@@ -63,31 +63,56 @@ button {
     color: red;
 }
 
+.cart{
+    
+    /* margin-top:5%; */
+    font-size:15px;
+    /* border:2px solid blue; */
+    /* height:25px; */
+    color:white;
+    background:blue;
+    
+}
 
 /*---------------------Desktop view---------------------*/
 
 @media (max-width:1400px) {
     .item-main-div,
     .item-container {
-        height: 180px !important;
+        height: 180px ;
         display: flex;
     }
     .item-image {
-        margin-left: 0 !important;
+        margin-left: 0 ;
     }
     .item-description {
-        height: 180px !important;
+        height: 180px ;
+        font-size:15px;
     }
+    /*hidding the extra content*/
+    #hidden-item-description{
+        display:none;
+    }
+    
 }
 
 
 /* -----------------------Tablet view------------------------- */
 
 @media (min-width:787px) and (max-width:992px) {
+   
     .item-main-div,
     .item-container {
-        height: 180px !important;
+        height: 180px ;
         display: flex;
+        
+    }
+    /*hidding the extra content*/
+    #hidden-item-description{
+        display:none;
+    }
+    .item-description{
+        font-size:12px;
     }
 }
 
@@ -97,23 +122,29 @@ button {
 @media (max-width:786px) {
     .item-main-div,
     .item-container {
-        height: 470px !important;
+        height: 280px ;
         /* height:360px; */
         display: block;
+    }
+
+    /*hidding the extra content*/
+    #hidden-item-description{
+        display:none;
     }
     .item-main-div {
         margin-top: 20px;
     }
     .item-description {
-        height: 295px !important;
+        height: 295px ;
     }
     .item-image {
-        width: 100% !important;
-        /* margin-left:10% !important; */
+        width: 100% ;
+        /* margin-left:10% ; */
     }
     .item-description {
         width: 100%;
         word-spacing: 0;
         letter-spacing: 0;
+        font-size:10px;
     }
 }

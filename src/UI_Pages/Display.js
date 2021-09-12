@@ -38,7 +38,7 @@ const Display=({value})=>{
     console.log(value)
     return (
         <>
-            <div style={obj}>
+            <div style={obj} class="display-div">
                 <h5 style={heading}>Famous food of {value.state} state</h5>
                
                 <div style={festival} className="main-display-container">
